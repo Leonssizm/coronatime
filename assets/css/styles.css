@@ -1,0 +1,105 @@
+/* fonts */
+@font-face {
+  font-family: inter;
+  src: url(../fonts/Inter-Regular.ttf);
+  font-style: normal;
+}
+
+/* Common */
+body {
+  background: #ffff;
+  margin: 0;
+  font-family: inter;
+}
+
+a {
+  color: black;
+  list-style: none;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.active {
+  font-weight: bold;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 25px;
+  color: #010414;
+}
+
+/* Layout */
+.container {
+  width: 100%;
+  height: 80px;
+  padding-left: 108px;
+  padding-right: 108px;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 19px;
+}
+header ul {
+  display: flex;
+}
+header li {
+  display: inline;
+  padding: 0px 20px;
+}
+header ul li:nth-child(3) {
+  padding-right: 0;
+}
+header li span {
+  font-weight: 900;
+}
+
+.inner-navigation li {
+  display: inline-block;
+}
+.inner-navigation li:first-child {
+  margin-right: 20px;
+}
+.inner-navigation li:hover {
+  text-decoration: underline 3px solid #010414;
+}
+li img{
+  padding:2px;
+}
+.hide-on-mobile img{
+  padding:4px;
+}
+
+
+
+/* Responsive */
+
+@media (max-width: 375px) {
+  .hide-on-mobile{
+    display: none;
+  }
+  .container{
+    padding:25px 16px 0 16px;
+  }
+ 
+}
+
+@media (min-width: 376px) {
+  .hide-on-desktop{
+    display: none;
+  }
+}
